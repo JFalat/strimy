@@ -1,16 +1,22 @@
 package zadaniadlaReni;
 
-public class Chlop {
+
+public class Chlop extends Czlowiek implements LudzieZachowania{
     private String eyecolour;
     private int readyToGoTime;
     private int salary;
 
     // Konstruktor
-    public Chlop(String eyecolour, int readyToGoTime, int salary) {
+    public Chlop(String eyecolour, int readyToGoTime, int salary, String address) {
+        super(address);
         this.eyecolour = eyecolour;
         this.readyToGoTime = readyToGoTime;
         this.salary = salary;
     }
+    public void sayHello() {
+        LudzieZachowania.PowiedzDziendory();
+    }
+
 
     // Gettery
     public String getEyecolour() {
