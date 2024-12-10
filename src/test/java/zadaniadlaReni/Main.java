@@ -28,6 +28,7 @@ public class Main {
                 .sorted(Comparator.comparing(Chlop::getSalary).reversed())
                 .limit(1)
                 .collect(Collectors.toList());
+
         //tworzymy chlopa i wywolujemy test
         Chlop chlop = new Chlop("blue", 30,333);
         assertThat(chlop).isNotNull();

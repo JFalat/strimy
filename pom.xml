@@ -21,6 +21,7 @@
             <version>3.24.2</version> <!-- Sprawdź najnowszą wersję -->
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
