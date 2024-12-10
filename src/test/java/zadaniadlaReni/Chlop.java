@@ -29,7 +29,7 @@ public class Chlop {
     public String toString() {
         return "Chlop{" +
                 "eyecolour='" + eyecolour + '\'' +
-                ", readyToGoTime=" + readyToGoTime +
+                ",  readyToGoTime=" + readyToGoTime +
                 ", salary=" + salary +
                 '}';
     }
