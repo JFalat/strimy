@@ -1,7 +1,7 @@
 package zadaniadlaReni;
 
 
-public class Chlop extends Czlowiek implements LudzieZachowania{
+public abstract class Chlop extends Czlowiek implements LudzieZachowania,RobotaChlopa{
     private String eyecolour;
     private int readyToGoTime;
     private int salary;
@@ -16,6 +16,7 @@ public class Chlop extends Czlowiek implements LudzieZachowania{
     public void sayHello() {
         LudzieZachowania.PowiedzDziendory();
     }
+
 
 
     // Gettery
