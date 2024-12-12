@@ -31,10 +31,13 @@ public class Main {
 //        Chlop chlop = new Chlop("blue", 30, 333, "abc");
         DzieciatyChlop dzieciatyChlop = new DzieciatyChlop();
         RobotnyChlop robotnyChlop = new RobotnyChlop();
-//        chlop.sayHello();
-//        assertThat(chlop).isNotNull();
-//        assertThat(chlop.getEyecolour()).isEqualTo("blue");
-
+        ChlopBumelant chlopBumelant = new ChlopBumelant();
+        dzieciatyChlop.ocenaWieczoru(1,true,2,
+                true,false);
+        robotnyChlop.ocenaWieczoru(3,true,3,
+                true,false);
+        chlopBumelant.ocenaWieczoru(1,false,
+                3,false,true);
         // Testowanie metod
         assertThat(dzieciatyChlop.PrzywiezBombelki(5)).isEqualTo(5);
         assertThat(dzieciatyChlop.WywiezBombelki(5)).isEqualTo(5);

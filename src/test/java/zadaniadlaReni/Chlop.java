@@ -1,23 +1,18 @@
 package zadaniadlaReni;
 
 
-public abstract class Chlop extends Czlowiek implements LudzieZachowania,RobotaChlopa{
+public abstract class Chlop implements RobotaChlopa,ZachowaniaChlopa{
     private String eyecolour;
     private int readyToGoTime;
     private int salary;
 
     // Konstruktor
-    public Chlop(String eyecolour, int readyToGoTime, int salary, String address) {
-        super(address);
+    public Chlop(String eyecolour, int readyToGoTime, int salary) {
+
         this.eyecolour = eyecolour;
         this.readyToGoTime = readyToGoTime;
         this.salary = salary;
     }
-    public void sayHello() {
-        LudzieZachowania.PowiedzDziendory();
-    }
-
-
 
     // Gettery
     public String getEyecolour() {
