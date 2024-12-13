@@ -22,6 +22,7 @@ public class RobotnyChlop implements RobotaChlopa,ZachowaniaChlopa{
          return "max 2 drineczki";
      } else if(CzyWstajeszDoRoboty){
          return "moga byc dwa ale bez wodeczki";
-     } else {return "baw sie jak czlowiek";}
+     } else {
+         return "baw sie jak czlowiek";}
     }
 }

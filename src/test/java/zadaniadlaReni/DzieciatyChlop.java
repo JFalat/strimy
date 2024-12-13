@@ -1,9 +1,14 @@
 package zadaniadlaReni;
 
-public class DzieciatyChlop implements OgarnijBombelki, ZachowaniaChlopa{
+public class DzieciatyChlop extends Chlop implements OgarnijBombelki, ZachowaniaChlopa{
     int IloscDzieci;
     boolean KoniecznoscWstawaniaRano;
     int IloscDrinkow;
+
+    public DzieciatyChlop(String eyecolour, int readyToGoTime, int salary) {
+        super(eyecolour, readyToGoTime, salary);
+    }
+
     @Override
     public int PrzywiezBombelki(int iloscBombelkow) {
         return OgarnijBombelki.super.PrzywiezBombelki(iloscBombelkow);
@@ -26,7 +31,8 @@ public class DzieciatyChlop implements OgarnijBombelki, ZachowaniaChlopa{
             return "wypij max 2 drinki";
         } else if (IloscDzieci >1) {
             return "postaw jednak na herbate";
-        } else { return  "baw sie jak czlowiek";}
+        } else {
+            return  "baw sie jak czlowiek";}
 
     }
 }
