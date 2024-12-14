@@ -1,17 +1,27 @@
 package zadaniadlaReni;
 
-public class RobotnyChlop implements RobotaChlopa,ZachowaniaChlopa{
-    @Override
+public class RobotnyChlop extends Chlop implements RobotaChlopa{
+    int iloscDrinkow;
+    boolean koniecznoscWstawaniaRano;
+    int IloscDzieci;
+    boolean CzyWstajeszDoRoboty;
+    boolean CzyBierzenaZeszyt;
+
+    public RobotnyChlop(String eyecolour, int readyToGoTime, int salary) {
+        super(eyecolour, readyToGoTime, salary);
+    }
+
+
     public String jedzDoBiura(String numerBusa) {
         return RobotaChlopa.super.jedzDoBiura(numerBusa);
     }
 
-    @Override
+
     public int klepNaKlawiaturze(int time) {
         return RobotaChlopa.super.klepNaKlawiaturze(time);
     }
 
-    @Override
+
     public int wracajDoDomu(int time) {
         return RobotaChlopa.super.wracajDoDomu(time);
     }

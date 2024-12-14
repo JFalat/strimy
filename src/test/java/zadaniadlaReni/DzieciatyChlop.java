@@ -1,6 +1,6 @@
 package zadaniadlaReni;
 
-public class DzieciatyChlop extends Chlop implements OgarnijBombelki, ZachowaniaChlopa{
+public class DzieciatyChlop extends Chlop implements OgarnijBombelki{
     int IloscDzieci;
     boolean KoniecznoscWstawaniaRano;
     int IloscDrinkow;
@@ -9,18 +9,17 @@ public class DzieciatyChlop extends Chlop implements OgarnijBombelki, Zachowania
         super(eyecolour, readyToGoTime, salary);
     }
 
-    @Override
     public int PrzywiezBombelki(int iloscBombelkow) {
         return OgarnijBombelki.super.PrzywiezBombelki(iloscBombelkow);
     }
 
-    @Override
+
     public int WywiezBombelki(int iloscBombelkow) {
         return OgarnijBombelki.super.WywiezBombelki(iloscBombelkow);
 
     }
 
-    @Override
+
     public int WybierzGowno(int WagaKupy, int iloscBombelkow) {
         return OgarnijBombelki.super.WybierzGowno(WagaKupy, iloscBombelkow);
     }

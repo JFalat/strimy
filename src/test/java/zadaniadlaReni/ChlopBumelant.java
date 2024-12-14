@@ -1,6 +1,6 @@
 package zadaniadlaReni;
 
-public class ChlopBumelant extends Chlop implements ZachowaniaChlopa{
+public class ChlopBumelant extends Chlop {
     public ChlopBumelant(String eyecolour, int readyToGoTime, int salary) {
         super(eyecolour, readyToGoTime, salary);
     }

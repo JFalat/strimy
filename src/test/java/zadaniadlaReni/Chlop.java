@@ -1,7 +1,7 @@
 package zadaniadlaReni;
 
 
-public abstract class Chlop implements RobotaChlopa,ZachowaniaChlopa{
+public abstract class Chlop implements ZachowaniaChlopa{
     private String eyecolour;
     private int readyToGoTime;
     private int salary;
